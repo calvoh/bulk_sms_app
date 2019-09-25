@@ -8,7 +8,7 @@ Twilio console can be found here (you must have credentions)
 https://www.twilio.com/console
 
 ## The code to send SMS using twilio
-
+```
 <?php 
 require __DIR__ . '/vendor/autoload.php';
 use Twilio\Rest\Client;
@@ -48,8 +48,10 @@ $auth_token = '80000000000000000000000000000000';
 				}
 	}
 ?>
-
+```
 ## The Code to read from an Excel DOcument that has phone numbers
+The excel has to be named data and in the same location as the server files, this can be changed to an upload with time
+```
 <?php
 require_once "Classes/PHPExcel.php";
 
@@ -74,7 +76,7 @@ require_once "Classes/PHPExcel.php";
              
 		}	
 ?>
-
+```
 Lastly we use PHPExcel/Classes to import the data and we use Composer classes to import twilio api
 More details on PHPExcel can be found here
 https://github.com/PHPOffice/PHPExcel
